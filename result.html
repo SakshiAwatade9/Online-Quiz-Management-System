@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Quiz Result</h2>
+
+    <h3 id="score"></h3>
+    <h3 id="message"></h3>
+
+    <button onclick="goDashboard()">Go to Dashboard</button>
+</div>
+
+<script>
+let score = Number(localStorage.getItem("score"));
+let total = Number(localStorage.getItem("total"));
+let attempted = Number(localStorage.getItem("attempted"));
+
+document.getElementById("score").innerText =
+    "Score: " + score + " / " + total;
+
+if (attempted == 0) {
+    document.getElementById("message").innerText = "You have not attempted any question ❗";
+}
+else if (score == total) {
+    document.getElementById("message").innerText = "Excellent! 🎉";
+}
+else if (score >= total / 2) {
+    document.getElementById("message").innerText = "Good Job 👍";
+}
+else {
+    document.getElementById("message").innerText = "Try Again 😅";
+}
+
+// ✅ ADD THIS FUNCTION (IMPORTANT)
+function goDashboard() {
+    window.location.href = "dashboard.html";
+}
+</script>
+
+</body>
+</html>
