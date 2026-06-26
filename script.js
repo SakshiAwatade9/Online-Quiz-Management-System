@@ -1,6 +1,6 @@
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDpANE69WxwkTl8ZlvtwDZeUrF5N2Q0NRY",
+  apiKey: "your_api_key",
   authDomain: "dbmsquiz-3237f.firebaseapp.com",
   projectId: "dbmsquiz-3237f",
   storageBucket: "dbmsquiz-3237f.firebasestorage.app",
