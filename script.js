@@ -2,10 +2,10 @@
 const firebaseConfig = {
   apiKey: "your_api_key",
   authDomain: "dbmsquiz-3237f.firebaseapp.com",
-  projectId: "dbmsquiz-3237f",
+  projectId: "project_id",
   storageBucket: "dbmsquiz-3237f.firebasestorage.app",
   messagingSenderId: "468588534982",
-  appId: "1:468588534982:web:494d6c5d97b252d7800bc7"
+  appId: "app_id"
 };
 
 firebase.initializeApp(firebaseConfig);
